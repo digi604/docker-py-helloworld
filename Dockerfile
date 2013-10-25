@@ -7,5 +7,5 @@ RUN easy_install pip
 ADD . /opt/app
 RUN pip install -r /opt/app/requirements.txt uwsgi
 
-EXPOSE 8000
+EXPOSE 9000
 CMD ["/usr/local/bin/uwsgi", "--ini", "/opt/app/app.ini"]
